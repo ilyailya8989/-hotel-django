@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>info rooms</title>
+</head>
+<body>
+
+    <h1> number room - {{ rooms.numbers }}</h1>
+    <p>спальные места __{{ rooms.classification }}__</p>
+    <p>цена за ночь __{{ rooms.priceOnNight }}__</p>
+    <p>описание номера __{{ rooms.description }}__</p>
+<br><br>
+    <a href="{% url 'edit_room' rooms.id %}">EDIT</a>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>edit room</title>
+</head>
+<body>
+
+<form action="" method="post">
+    {% csrf_token %}
+
+        <label for="classification">Room Classification:</label>
+        <input type="text" id="classification" name="classification" required>
+<br><br>
+        <label for="priceOnNight">Price Per Night:</label>
+        <input type="number" id="priceOnNight" name="priceOnNight" required>
+<br><br>
+        <label for="description">Room Description:</label>
+        <textarea id="description" name="description" required></textarea>
+<br><br>
+        <button>SAVE</button>
+        <a href=" {% url 'first' %} ">beack</a>
+
+
+
+</form>
+
+</body>
+</html>
