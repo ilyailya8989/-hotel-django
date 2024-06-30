@@ -2,17 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>add room</title>
+    <title>edit room</title>
 </head>
 <body>
-<h1>add new room</h1>
 
 <form action="" method="post">
-      {% csrf_token %}
+    {% csrf_token %}
 
-        <label for="numbers">Room Number:</label>
-        <input type="text" id="numbers" name="numbers" required>
-<br><br>
         <label for="classification">Room Classification:</label>
         <input type="text" id="classification" name="classification" required>
 <br><br>
@@ -22,16 +18,9 @@
         <label for="description">Room Description:</label>
         <textarea id="description" name="description" required></textarea>
 <br><br>
-        <label for="rooms">Room Description:</label>
-        <textarea id="rooms" name="rooms" required></textarea>
-<br><br>
-        <button>Add Room</button>
-<br><br>
+        <button>SAVE</button>
         <a href=" {% url 'first' %} ">beack</a>
 </form>
-
-
-
 
 </body>
 </html>

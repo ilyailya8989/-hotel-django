@@ -7,7 +7,10 @@
 <body>
 
     <h1> number room - {{ rooms.numbers }}</h1>
-    <p>{{ rooms.description }}</p>
-
+    <p>спальные места __{{ rooms.classification }}__</p>
+    <p>цена за ночь __{{ rooms.priceOnNight }}__</p>
+    <p>описание номера __{{ rooms.description }}__</p>
+<br><br>
+    <a href="{% url 'edit_room' rooms.id %}">EDIT</a>
 </body>
 </html>

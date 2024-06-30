@@ -10,11 +10,10 @@
     {% for room in rooms %}
     <li>
         <a href="{% url 'second' room.id%}">
-            {{ room.numbers }} {{ room.classification }}
-            <a href="{% url 'add_room' %}">ADD</a>
+            (__{{ room.numbers }} {{ room.classification }}__)
         </a>
-
-
+        <a href="{% url 'add_room' %}">ADD</a>
+        <a href="{% url 'del_room' room.id%}">DEL</a>
     </li>
     {% endfor %}
 </ul>
